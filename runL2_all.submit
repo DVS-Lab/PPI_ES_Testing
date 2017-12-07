@@ -27,6 +27,3 @@ for subj in `cat sublist`; do
     done
     bash L2_Soc_nPPI.sh $subj &
 done
-
-
-
