@@ -5,7 +5,7 @@ cd ..
 MAINDATADIR=/s3/hcp
 MAINOUTPUTDIR=`pwd`/Analysis
 cd $basedir
-
+#testing
 task=$1
 run=$2
 subj=$3
@@ -23,7 +23,7 @@ if [ -e $aromaoutput ]; then
 	#echo "skipping existing output to save money!"
 	exit
 else
-echo "re-running $subj on $task and run $run"	
+echo "re-running $subj on $task and run $run"
 rm -rf ${OUTPUT}.feat
 fi
 
@@ -56,4 +56,3 @@ NVOLUMES=`fslnvols ${DATA}`
 
 #delete temp file
 rm -rf /tmp/hcp-openaccess/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/tfMRI_${task}_${run}.nii.gz
-
