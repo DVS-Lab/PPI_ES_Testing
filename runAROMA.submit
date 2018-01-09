@@ -19,7 +19,7 @@ for task in SOCIAL EMOTION WM; do
 		done
 
 		bash runAROMA.sh $task $RUN $subj &
-		sleep 1
+		sleep 5s
 
 	done
 
