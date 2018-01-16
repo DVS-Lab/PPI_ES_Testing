@@ -2,6 +2,23 @@
 
 NCORES=28
 
+# Emotion task
+for subj in `cat sublist`; do
+    #Manages the number of jobs and cores
+    while [ $(ps -ef | grep -v grep | grep L2_Soc_Act.sh | wc -l) -ge $NCORES ]; do
+        sleep 1m
+    done
+    bash L2_Emo_Act.sh $subj &
+done
+
+# Emotion task
+for subj in `cat sublist`; do
+    #Manages the number of jobs and cores
+    while [ $(ps -ef | grep -v grep | grep L2_Soc_Act.sh | wc -l) -ge $NCORES ]; do
+        sleep 1m
+    done
+    bash L2_Emo_PPI.sh $subj &
+done
 
 # Social task
 for subj in `cat sublist`; do
