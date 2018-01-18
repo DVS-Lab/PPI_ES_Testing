@@ -9,7 +9,7 @@ cd $BASEDIR
 TYPE=$1
 COPENUM=$2
 
-OUTPUT=${MAINOUTPUTDIR}/L3_${TYPE}_${COPENUM}
+OUTPUT=${MAINOUTPUTDIR}/L3_Social_${COPENUM}
 
 # checking L3 output
 if [ -e ${OUTPUT}.gfeat/cope1.feat/cluster_mask_zstat1.nii.gz ]; then
