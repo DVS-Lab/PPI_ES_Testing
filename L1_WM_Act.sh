@@ -15,7 +15,7 @@ DATA=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_${task}_${run}/smoothin
 NVOLUMES=`fslnvols ${DATA}`
 
 # checking L1 output
-if [ -e ${OUTPUT}.feat/cluster_mask_zstat1.nii.gz ]; then
+if [ -e ${OUTPUT}.feat/stats/cope2.nii.gz ]; then
   exit
 else
   rm -rf ${OUTPUT}.feat
