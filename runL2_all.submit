@@ -11,10 +11,10 @@ for subj in `cat sublist`; do
     bash L2_Emo_Act.sh $subj &
 done
 
-# Emotion task
+
 for subj in `cat sublist`; do
     #Manages the number of jobs and cores
-    while [ $(ps -ef | grep -v grep | grep L2_Soc_Act.sh | wc -l) -ge $NCORES ]; do
+    while [ $(ps -ef | grep -v grep | grep L2_Emo_PPI.sh | wc -l) -ge $NCORES ]; do
         sleep 1m
     done
     bash L2_Emo_PPI.sh $subj &
@@ -49,8 +49,16 @@ done
 
 for subj in `cat sublist`; do
     #Manages the number of jobs and cores
-    while [ $(ps -ef | grep -v grep | grep L2_Soc_nPPI.sh | wc -l) -ge $NCORES ]; do
+    while [ $(ps -ef | grep -v grep | grep L2_Soc_nPPI_DMN.sh | wc -l) -ge $NCORES ]; do
         sleep 1m
     done
-    bash L2_Soc_nPPI.sh $subj &
+    bash L2_Soc_nPPI_DMN.sh $subj &
+done
+
+for subj in `cat sublist`; do
+    #Manages the number of jobs and cores
+    while [ $(ps -ef | grep -v grep | grep L2_Soc_nPPI_ECN.sh | wc -l) -ge $NCORES ]; do
+        sleep 1m
+    done
+    bash L2_Soc_nPPI_ECN.sh $subj &
 done
