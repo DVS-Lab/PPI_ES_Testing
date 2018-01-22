@@ -30,7 +30,7 @@ for run in LR RL; do
 done
 
 #find and replace
-ITEMPLATE=${BASEDIR}/templates/L2_Emotion_PPI.fsf
+ITEMPLATE=${BASEDIR}/templates/L2_Emo_PPI.fsf
 OTEMPLATE=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_Emotion_PPI.fsf
 sed -e 's@OUTPUT@'$OUTPUT'@g' \
 -e 's@INPUT01@'$INPUT01'@g' \
