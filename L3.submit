@@ -2,7 +2,7 @@
 
 
 NCORES=28
-for LIST in "Soc_Act 2" "Soc_PPI 7"; do
+for LIST in "Social_Act 2" "Social_PPI 7"; do
   set -- $LIST
   TYPE=$1
   NCOPES=$2
