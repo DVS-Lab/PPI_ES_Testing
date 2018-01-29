@@ -2,7 +2,7 @@
 
 
 NCORES=28
-#for LIST in "Social_Act 2" "Social_PPI 7"; do
+#for LIST in "Social_Act 2" "Social_PPI 7" ""; do
 #for LIST in "Social_PPI 7"; do
 for LIST in "Social_PPI 2"; do
 
@@ -16,6 +16,6 @@ for LIST in "Social_PPI 2"; do
     while [ $(ps -ef | grep -v grep | grep L3.sh | wc -l) -ge $NCORES ]; do
         sleep 1m
     done
-    bash L3_Soc.sh $TYPE $COPENUM &
+    bash L3.sh $TYPE $COPENUM &
   done
 done
