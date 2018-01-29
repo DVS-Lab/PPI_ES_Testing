@@ -15,7 +15,7 @@ OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_WM_PPI
 
 # checking L2 output
 NCOPES=7 #check last cope since they are done sequentially
-if [ -e ${OUTPUT}.gfeat/cope${NCOPES}.feat/cluster_mask_zstat1.nii.gz ]; then
+if [ -e ${OUTPUT}.feat/stats/cope2.nii.gz ]; then
   exit
 else
   rm -rf ${OUTPUT}.gfeat
