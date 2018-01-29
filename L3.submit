@@ -13,7 +13,7 @@ for LIST in "Social_PPI 2"; do
   for COPENUM in `seq $NCOPES`; do
     echo $TYPE $COPENUM
     #Manages the number of jobs and cores
-    while [ $(ps -ef | grep -v grep | grep L3_Soc.sh | wc -l) -ge $NCORES ]; do
+    while [ $(ps -ef | grep -v grep | grep L3.sh | wc -l) -ge $NCORES ]; do
         sleep 1m
     done
     bash L3_Soc.sh $TYPE $COPENUM &
