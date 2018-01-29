@@ -32,8 +32,8 @@ done
 ITEMPLATE=${BASEDIR}/templates/L2_WM_Act.fsf
 OTEMPLATE=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_WM_Act.fsf
 sed -e 's@OUTPUT@'$OUTPUT'@g' \
--e 's@INPUT1@'$INPUT1'@g' \
--e 's@INPUT2@'$INPUT2'@g' \
+-e 's@INPUT01@'$INPUT01'@g' \
+-e 's@INPUT02@'$INPUT02'@g' \
 <$ITEMPLATE> $OTEMPLATE
 
 #runs feat on output template
