@@ -268,10 +268,10 @@ set fmri(copeinput.1) 1
 set fmri(copeinput.2) 1
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "INPUT1"
+set feat_files(1) "INPUT01"
 
 # 4D AVW data or FEAT directory (2)
-set feat_files(2) "INPUT2"
+set feat_files(2) "INPUT02"
 
 # Add confound EVs text file
 set fmri(confoundevs) 0
