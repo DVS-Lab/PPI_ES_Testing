@@ -267,6 +267,15 @@ set fmri(copeinput.1) 1
 # Use lower-level cope 2 for higher-level analysis
 set fmri(copeinput.2) 1
 
+# Use lower-level cope 3 for higher-level analysis
+set fmri(copeinput.3) 1
+
+# Use lower-level cope 4 for higher-level analysis
+set fmri(copeinput.4) 1
+
+# Use lower-level cope 5 for higher-level analysis
+set fmri(copeinput.5) 1
+
 # 4D AVW data or FEAT directory (1)
 set feat_files(1) "INPUT01"
 
