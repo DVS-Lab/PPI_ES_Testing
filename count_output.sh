@@ -25,8 +25,9 @@ done
 #ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_WM_PPI.gfeat/stats/cope7.nii.gz | wc -l 
 
 for TYPE in Act PPI; do
-	SOC=`ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_Social_${TYPE}.gfeat/cope2.feat/stats/cope1.nii.gz | wc -l`
-	EMO=`ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_Emotion_${TYPE}.gfeat/cope2.feat/stats/cope1.nii.gz| wc -l`
+	SOC=`ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_Social_${TYPE}.gfeat/cope1.feat/stats/cope1.nii.gz | wc -l`
+	#EMO=`ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_Emotion_${TYPE}.gfeat/cope1.nii.gz| wc -l`
+	EMO=`ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_Emotion_${TYPE}.gfeat/cope1.feat/stats/cope1.nii.gz| wc -l`
 	WM=`ls -1 ${MAINOUTPUTDIR}/*/MNINonLinear/Results/L2_WM_${TYPE}.gfeat/cope1.feat/stats/cope1.nii.gz | wc -l`
 	echo "L2 counts for $TYPE: Social has $SOC; Emotion has $EMO; WM has $WM"
 done

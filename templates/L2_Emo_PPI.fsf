@@ -259,7 +259,7 @@ set fmri(regstandard_nonlinear_warpres) 10
 set fmri(paradigm_hp) 100
 
 # Number of lower-level copes feeding into higher-level analysis
-set fmri(ncopeinputs) 7
+set fmri(ncopeinputs) 5
 
 # Use lower-level cope 1 for higher-level analysis
 set fmri(copeinput.1) 1
@@ -275,12 +275,6 @@ set fmri(copeinput.4) 1
 
 # Use lower-level cope 5 for higher-level analysis
 set fmri(copeinput.5) 1
-
-# Use lower-level cope 6 for higher-level analysis
-set fmri(copeinput.6) 1
-
-# Use lower-level cope 7 for higher-level analysis
-set fmri(copeinput.7) 1
 
 # 4D AVW data or FEAT directory (1)
 set feat_files(1) "INPUT01"
