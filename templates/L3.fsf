@@ -36,7 +36,7 @@ set fmri(outputdir) "OUTPUT"
 set fmri(tr) 3
 
 # Total volumes
-set fmri(npts) NVOLUMES
+set fmri(npts) 186
 
 # Delete volumes
 set fmri(ndelete) 0

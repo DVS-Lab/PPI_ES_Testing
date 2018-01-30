@@ -30,5 +30,5 @@ sed -e 's@OUTPUT@'$OUTPUT'@g' \
 feat $OTEMPLATE
 
 # delete old stuff
-rm -rf ${OUTPUT}.gfeat/cope1.feat/filtered_func_data.nii.gz
-rm -rf ${OUTPUT}.gfeat/cope1.feat/var_filtered_func_data.nii.gz
+#rm -rf ${OUTPUT}.gfeat/cope1.feat/filtered_func_data.nii.gz
+#rm -rf ${OUTPUT}.gfeat/cope1.feat/var_filtered_func_data.nii.gz
