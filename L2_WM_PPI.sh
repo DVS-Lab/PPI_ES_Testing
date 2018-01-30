@@ -14,7 +14,7 @@ INPUT02=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_WM_RL/L1_WM_PPI.feat
 OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_WM_PPI
 
 # checking L2 output
-NCOPES=7 #check last cope since they are done sequentially
+NCOPES=5 #check last cope since they are done sequentially
 if [ -e ${OUTPUT}.feat/stats/cope2.nii.gz ]; then
   exit
 else
