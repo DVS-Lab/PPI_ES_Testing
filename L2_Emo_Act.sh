@@ -22,6 +22,7 @@ else
 fi
 
 for run in LR RL; do
+rm -rf ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_EMOTION_${run}/L1_Emotion_Act.feat/reg
   mkdir -p ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_EMOTION_${run}/L1_Emotion_Act.feat/reg
   ln -s $FSLDIR/etc/flirtsch/ident.mat ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_EMOTION_${run}/L1_Emotion_Act.feat/reg/example_func2standard.mat
   ln -s $FSLDIR/etc/flirtsch/ident.mat ${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_EMOTION_${run}/L1_Emotion_Act.feat/reg/standard2example_func.mat
