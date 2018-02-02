@@ -30,13 +30,13 @@ set fmri(featwatcher_yn) 0
 set fmri(sscleanup_yn) 0
 
 # Output directory
-set fmri(outputdir) "/data/Analysis/100307/MNINonLinear/Results/tfMRI_WM_LR/L1_WM_PPI"
+set fmri(outputdir) "OUTPUT"
 
 # TR(s)
 set fmri(tr) 0.720000
 
 # Total volumes
-set fmri(npts) 405
+set fmri(npts) NVOLUMES
 
 # Delete volumes
 set fmri(ndelete) 0
@@ -267,7 +267,7 @@ set fmri(totalVoxels) 365564745
 set fmri(ncopeinputs) 0
 
 # 4D AVW data or FEAT directory (1)
-set feat_files(1) "/data/Analysis/100307/MNINonLinear/Results/tfMRI_WM_LR/L1_WM_Act.feat/filtered_func_data"
+set feat_files(1) "DATA"
 
 # Add confound EVs text file
 set fmri(confoundevs) 0
@@ -304,7 +304,7 @@ set fmri(tempfilt_yn1) 1
 set fmri(deriv_yn1) 0
 
 # Custom EV file (EV 1)
-set fmri(custom1) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/0bk_body.txt"
+set fmri(custom1) "EVDIR/0bk_body.txt"
 
 # Orthogonalise EV 1 wrt EV 0
 set fmri(ortho1.0) 0
@@ -392,7 +392,7 @@ set fmri(tempfilt_yn2) 1
 set fmri(deriv_yn2) 0
 
 # Custom EV file (EV 2)
-set fmri(custom2) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/0bk_faces.txt"
+set fmri(custom2) "EVDIR/0bk_faces.txt"
 
 # Orthogonalise EV 2 wrt EV 0
 set fmri(ortho2.0) 0
@@ -480,7 +480,7 @@ set fmri(tempfilt_yn3) 1
 set fmri(deriv_yn3) 0
 
 # Custom EV file (EV 3)
-set fmri(custom3) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/0bk_places.txt"
+set fmri(custom3) "EVDIR/0bk_places.txt"
 
 # Orthogonalise EV 3 wrt EV 0
 set fmri(ortho3.0) 0
@@ -568,7 +568,7 @@ set fmri(tempfilt_yn4) 1
 set fmri(deriv_yn4) 0
 
 # Custom EV file (EV 4)
-set fmri(custom4) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/0bk_tools.txt"
+set fmri(custom4) "EVDIR/0bk_tools.txt"
 
 # Orthogonalise EV 4 wrt EV 0
 set fmri(ortho4.0) 0
@@ -656,7 +656,7 @@ set fmri(tempfilt_yn5) 1
 set fmri(deriv_yn5) 0
 
 # Custom EV file (EV 5)
-set fmri(custom5) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/2bk_body.txt"
+set fmri(custom5) "EVDIR/2bk_body.txt"
 
 # Orthogonalise EV 5 wrt EV 0
 set fmri(ortho5.0) 0
@@ -744,7 +744,7 @@ set fmri(tempfilt_yn6) 1
 set fmri(deriv_yn6) 0
 
 # Custom EV file (EV 6)
-set fmri(custom6) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/2bk_faces.txt"
+set fmri(custom6) "EVDIR/2bk_faces.txt"
 
 # Orthogonalise EV 6 wrt EV 0
 set fmri(ortho6.0) 0
@@ -832,7 +832,7 @@ set fmri(tempfilt_yn7) 1
 set fmri(deriv_yn7) 0
 
 # Custom EV file (EV 7)
-set fmri(custom7) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/2bk_places.txt"
+set fmri(custom7) "EVDIR/2bk_places.txt"
 
 # Orthogonalise EV 7 wrt EV 0
 set fmri(ortho7.0) 0
@@ -920,7 +920,7 @@ set fmri(tempfilt_yn8) 1
 set fmri(deriv_yn8) 0
 
 # Custom EV file (EV 8)
-set fmri(custom8) "/s3/hcp/100307/MNINonLinear/Results/tfMRI_WM_LR/EVs/0bk_tools.txt"
+set fmri(custom8) "EVDIR/0bk_tools.txt"
 
 # Orthogonalise EV 8 wrt EV 0
 set fmri(ortho8.0) 0
@@ -1008,7 +1008,7 @@ set fmri(tempfilt_yn9) 0
 set fmri(deriv_yn9) 0
 
 # Custom EV file (EV 9)
-set fmri(custom9) "/data/Analysis/100307/MNINonLinear/Results/tfMRI_WM_LR/my_timecourse.txt"
+set fmri(custom9) "TIMECOURSE"
 
 # Orthogonalise EV 9 wrt EV 0
 set fmri(ortho9.0) 0
