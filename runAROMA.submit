@@ -28,5 +28,5 @@ for task in WM; do
     done
 done
 
-bash runL1_all.sh
+#bash runL1_all.sh
 
