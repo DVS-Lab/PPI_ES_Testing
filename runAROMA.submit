@@ -7,8 +7,10 @@ MAINOUTPUTDIR=`pwd`/Analysis
 cd $basedir
 
 
-for task in SOCIAL EMOTION WM; do
-    for subj in `cat sublist`; do
+#for task in SOCIAL EMOTION WM; do
+    #for subj in `cat sublist`; do
+for task in WM; do
+    for subj in `cat sublist2`; do 
 	for RUN in LR RL; do
 
 		#Manages the number of jobs and cores
