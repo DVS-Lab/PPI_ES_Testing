@@ -14,7 +14,7 @@ INPUT02=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/tfMRI_EMOTION_RL/L1_Emotio
 OUTPUT=${MAINOUTPUTDIR}/${subj}/MNINonLinear/Results/L2_Emotion_PPI
 
 # checking L2 output
-NCOPES=5 #check last cope since they are done sequentially
+NCOPES=7 #check last cope since they are done sequentially
 if [ -e ${OUTPUT}.gfeat/cope${NCOPES}.feat/cluster_mask_zstat1.nii.gz ]; then
   exit
 else
