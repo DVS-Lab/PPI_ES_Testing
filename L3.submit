@@ -2,8 +2,8 @@
 
 
 NCORES=30
-#for LIST in "Social_Act 2" "Social_PPI 7" "Social_nPPI_DMN 7" "Social_nPPI_ECN 7" "Emotion_Act 2" "Emotion_PPI 5" "WM_Act 2" "WM_PPI 5"; do
-for LIST in "Emotion_PPI 7" "WM_Act 2" "WM_PPI 7"; do
+for LIST in "Social_Act 2" "Social_PPI 7" "Social_nPPI_DMN 7" "Social_nPPI_ECN 7" "Emotion_Act 2" "Emotion_PPI 5" "WM_Act 2" "WM_PPI 5"; do
+#for LIST in "Emotion_PPI 7" "WM_Act 2" "WM_PPI 7"; do
 
   set -- $LIST
   TYPE=$1
