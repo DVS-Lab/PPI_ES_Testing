@@ -14,13 +14,10 @@ OutDir = sys.argv[3]
 FslDir = os.environ.get('FSLDIR')
 
 Masks={
-    'WM':[["Middle frontal gyrus",1,os.path.join(OutDir,"CreateMasks","masks","WM_1_CJ.nii.gz")]],
-    'EMOTION':[["Left amygdala",1,os.path.join(OutDir,"CreateMasks","masks","EMOTION_1_CJ.nii.gz")],
-            ["Right amygdala",2,os.path.join(OutDir,"CreateMasks","masks","EMOTION_2_CJ.nii.gz")]],
-    'GAMBLING':[["Left accumbens",1,os.path.join(OutDir,"CreateMasks","masks","GAMBLING_1_CJ.nii.gz")],
-            ["Right accumbens",2,os.path.join(OutDir,"CreateMasks","masks","GAMBLING_2_CJ.nii.gz")]]
+    'WM':[["WM_dlPFC_Target",1,os.path.join(OutDir,"CreateMasks","masks","dlpfcCogControl_ALE_C05_1k.nii_new.nii.gz")]],
+    'EMOTION':[["Emotion_Amygdala_Target",1,os.path.join(OutDir,"CreateMasks","masks","amygEmotion_ALE_C05_1k.nii_new.nii.gz")],
+    'SOCIAL':[["Social_vPAC_Target",1,os.path.join(OutDir,"CreateMasks","masks","vpacSocialCog_cp005_ALE_C05_1k.nii_new.nii.gz")],
 }
-
 
 # read cope + varcope
 CopeFile = os.path.join(ConDir,'group.gfeat','cope1.feat','stats','cope1.nii.gz')

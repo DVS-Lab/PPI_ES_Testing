@@ -11,7 +11,7 @@
 # Directory of Connectome in a box
 ConnectomeInABoxDir=$HCPDIR
 # Experiment to be analyzed
-Paradigm=("WM" "EMOTION" "GAMBLING")
+Paradigm=("WM" "EMOTION" "SOCIAL")
 # Which contrast from the experiment
 Contrast=(11 3 6)
 # Working Directory
@@ -21,7 +21,7 @@ WorkDir=
 # File with subjects to be included and disks on which they appear
 SubjectsFile=$WorkDir/SubjectSelection/IDs_all_cons_and_unrelated.txt
 
-for exp in {0..3} ; do
+for exp in {0..2} ; do
 
   ConDir=$WorkDir/GroupAnalyses/tfMRI_${Paradigm[exp]}/
 
