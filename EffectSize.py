@@ -13,6 +13,12 @@ ConDir = sys.argv[2]
 OutDir = sys.argv[3]
 FslDir = os.environ.get('FSLDIR')
 
+# Masks={
+#     'WM':[["WM_dlPFC_Target",1,os.path.join(OutDir,"CreateMasks","masks","dlpfcCogControl_ALE_C05_1k.nii_new.nii.gz")]],
+#     'EMOTION':[["Emotion_Amygdala_Target",1,os.path.join(OutDir,"CreateMasks","masks","amygEmotion_ALE_C05_1k.nii_new.nii.gz")],
+#     'SOCIAL':[["Social_vPAC_Target",1,os.path.join(OutDir,"CreateMasks","masks","vpacSocialCog_cp005_ALE_C05_1k.nii_new.nii.gz")],
+# }
+
 Masks={
     'WM':[["WM_dlPFC_Target",1,os.path.join(OutDir,"CreateMasks","masks","dlpfcCogControl_ALE_C05_1k.nii_new.nii.gz")]],
     'EMOTION':[["Emotion_Amygdala_Target",1,os.path.join(OutDir,"CreateMasks","masks","amygEmotion_ALE_C05_1k.nii_new.nii.gz")],
