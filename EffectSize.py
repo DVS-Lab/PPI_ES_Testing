@@ -13,22 +13,20 @@ ConDir = sys.argv[2]
 OutDir = sys.argv[3]
 FslDir = os.environ.get('FSLDIR')
 
-# Masks={
-#     'WM':[["WM_dlPFC_Target",1,os.path.join(OutDir,"CreateMasks","masks","dlpfcCogControl_ALE_C05_1k.nii_new.nii.gz")]],
-#     'EMOTION':[["Emotion_Amygdala_Target",1,os.path.join(OutDir,"CreateMasks","masks","amygEmotion_ALE_C05_1k.nii_new.nii.gz")],
-#     'SOCIAL':[["Social_vPAC_Target",1,os.path.join(OutDir,"CreateMasks","masks","vpacSocialCog_cp005_ALE_C05_1k.nii_new.nii.gz")],
-# }
-
 Masks={
-    'WM':[["WM_dlPFC_Target",1,os.path.join(OutDir,"CreateMasks","masks","dlpfcCogControl_ALE_C05_1k.nii_new.nii.gz")]],
-    'EMOTION':[["Emotion_Amygdala_Target",1,os.path.join(OutDir,"CreateMasks","masks","amygEmotion_ALE_C05_1k.nii_new.nii.gz")],
-    'SOCIAL':[["Social_vPAC_Target",1,os.path.join(OutDir,"CreateMasks","masks","vpacSocialCog_cp005_ALE_C05_1k.nii_new.nii.gz")],
+    'WM':[["WM_dlPFC_Target",1, mnt/c/Users/tue90350/Documents/GitHub/PPI_ES_Testing/Masks/dlpfcCogControl_ALE_C05_1k.nii_new.nii.gz]],
+    'EMOTION':[["Emotion_Amygdala_Target",1, mnt/c/Users/tue90350/Documents/GitHub/PPI_ES_Testing/Masks/amygEmotion_ALE_C05_1k.nii_new.nii.gz]],
+    'Social':[["Social_vPAC_Target",1, mnt/c/Users/tue90350/Documents/GitHub/PPI_ES_Testing/Masks/vpacSocialCog_cp005_ALE_C05_1k.nii_new.nii.gz]],
 }
 
 # read cope + varcope
-CopeFile = os.path.join(ConDir,'group.gfeat','cope1.feat','stats','cope1.nii.gz')
+
+#Contrast = sys.argv[1]
+#ConDir = sys.argv[2]
+#OutDir = sys.argv[3]
+CopeFile = os.path.join(ConDir,'cope1.feat','stats','cope1.nii.gz')
 Cope = nib.load(CopeFile).get_data()
-VarCopeFile = os.path.join(ConDir,'group.gfeat','cope1.feat','stats','varcope1.nii.gz')
+VarCopeFile = os.path.join(ConDir,'cope1.feat','stats','varcope1.nii.gz')
 VarCope = nib.load(VarCopeFile).get_data()
 
 # Compute Cohens D
